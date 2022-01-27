@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>PrestaPlus</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        
+
+
+
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+            <div class="container px-4">
+                <a class="navbar-brand" href="#page-top">PrestaPlus</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">Calcular</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="bg-info bg-gradient text">
+            <div class="container px-4 text-center">
+                <h1 class="fw-bolder" >¡Bienvenidos a PrestaPlus!</h1>
+                <p class="lead" id="titulo">Tu préstamo online, inmediato y a medida</p>
+                <a class="btn btn-lg btn-light" href="#about">Comenzar!</a>
+            </div>
+        </header>
+        <!-- About section-->
+        <section id="about">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2>PrestaPlus</h2>
+                        <p class="lead">¿Cómo funciona?</p>
+                        <ul>
+                            <li>Ingresá el monto que necesitás y tus datos de forma segura en nuestra página.</li>
+                            <li>Consultamos bases de datos financieras y si está todo en orden, aprobamos tu solicitud de crédito.</li>
+                            <li>Te depositamos el monto en pocas horas! Y pagás cada cuota por mes en Pago mis cuentas, Pagofácil o Rapipago.</li>                            
+                        </ul>
+
+                        <div>
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre:</label>
+                                <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+                              </div>
+                            
+                            <div class="mb-3">
+                              <label for="monto" class="form-label">Importe a solicitar:</label>
+                              <input type="number" class="form-control" id="monto" placeholder="Ej: 2500">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="cuotas" class="form-label">Cantidad de cuotas:</label>                               
+                                <select class="form-select" id="cuotas" aria-label="Default select example">
+                                    <option selected>Seleccione:</option>
+                                    <option value="3">3</option>
+                                    <option value="6">6</option>
+                                    <option value="12">12</option>
+                                  </select>
+
+                              </div>
+
+                            
+                            <button type="reset" class="btn btn-dark">Limpiar</button>
+                            <button type="submit" class="btn btn-primary" id="botonCalcular">Calcular</button>                           
+                        </div>
+
+                        <div  id = mensaje >
+
+                        </div>
+
+                    </div>                    
+                </div>                
+            </div>
+
+
+            
+        </section>
+        <!-- Services section-->
+        <section class="bg-light" id="services">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8" id="seccionDos">
+                        <h2>¿Por qué PrestaPlus?</h2>
+                        <p class="lead">Porque pensamos en las personas más que en los números. Ofrecemos ofertas personalizadas, conforme a tu perfil y con el objetivo de que seas parte del sistema financiero con condiciones mas equitativas y ofertas de calidad.</p>
+                        <button class="btn btn-dark" id="btnTerminos">Términos y condiciones</button>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <!-- Contact section-->
+        <section id="contact">
+            <div class="container px-4">
+                <div class="row gx-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2>Comunicate con nuestro equipo</h2>
+                        <p class="lead">¡Estamos para resolver todas tus consultas!</p>
+
+                        <div>
+                            <div class="mb-3">
+                              <label for="nombreCliente" class="form-label">Nombre y Apellido:</label>
+                              <input type="text" class="form-control" id="nombreCliente" placeholder="Ingrese su nombre y apellido">
+                            </div>
+                            <div class="mb-3">
+                                <label for="dni" class="form-label">DNI:</label>
+                                <input type="number" class="form-control" id="dni" placeholder="Ej: 34000777">
+                              </div>
+                            <div class="mb-3">
+                              <label for="telefono" class="form-label">Teléfono:</label>
+                              <input type="tel" class="form-control" id="telefono" placeholder="Ej: 1155001188">
+                            </div>
+                            <div class="mb-3">
+                              <label for="email" class="form-label">Email:</label>
+                              <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com">
+                            </div>
+                            <div class="mb-3">
+                              <label for="consulta" class="form-label">Consulta y/o solicitud:</label>
+                              <textarea class="form-control" id="consulta" rows="3"></textarea>
+                            </div>
+                            <button type="reset" class="btn btn-dark">Limpiar</button>
+                            <button type="submit" class="btn btn-primary" id="botonEnviar">Enviar</button>
+                          </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container px-4"><p class="m-0 text-center text-white">Copyright &copy; Eliana Fernandez 2021</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
