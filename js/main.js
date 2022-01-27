@@ -93,7 +93,7 @@
 
     function getClimateData(lat, lon){
     
-    let urlClima = "http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&appid=f64a2c2d7a22f53ab3c55884182abb01";
+    let urlClima = "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&appid=f64a2c2d7a22f53ab3c55884182abb01";
 
         $.get(urlClima, function(data){
 
